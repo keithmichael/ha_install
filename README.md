@@ -45,12 +45,12 @@ sudo mysql
 	  CHARACTER SET utf8
   COLLATE utf8_general_ci;
 
- CREATE USER 'hass_usr'@'localhost' IDENTIFIED BY 'gE495Cn3cgBXjWoXRMJK';
+ CREATE USER 'hass_usr'@'localhost' IDENTIFIED BY 'ssssssssssssssssssssssssssssssssss';
 
 USE hass_db;
 GRANT ALL PRIVILEGES ON *.* TO 'hass_usr'@'localhost';
-CREATE USER 'hass_usr'@'%' IDENTIFIED BY 'gE495Cn3cgBXjWoXRMJK';
-GRANT ALL PRIVILEGES ON *.* TO 'hass_usr'@'%' IDENTIFIED BY 'gE495Cn3cgBXjWoXRMJK' WITH GRANT OPTION;
+CREATE USER 'hass_usr'@'%' IDENTIFIED BY 'ssssssssssssssssssssssssssssssssss';
+GRANT ALL PRIVILEGES ON *.* TO 'hass_usr'@'%' IDENTIFIED BY 'ssssssssssssssssssssssssssssssssss' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 
