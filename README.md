@@ -3,7 +3,7 @@ sudo timedatectl set-timezone America/New_York
 
 
 # Update/Upgrade
-sudo apt-get update && sudo apt-get dist-upgrade --yes && sudo apt-get upgrade --yes
+	sudo apt-get update && sudo apt-get dist-upgrade --yes && sudo apt-get upgrade --yes
 
 
 # Install Software
