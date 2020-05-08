@@ -30,6 +30,7 @@
 # Log into MySQL
 	sudo mysql
 
+# Create HA and Event databases
 	CREATE DATABASE hass_db
 	CHARACTER SET utf8
 	COLLATE utf8_general_ci;
@@ -38,31 +39,32 @@
 	CHARACTER SET utf8
 	COLLATE utf8_general_ci;
 
+# Create DB User
 	CREATE USER 'hass_usr'@'localhost' IDENTIFIED BY 'ssssssssssssssssssssssssssssssssss';
 
+# Grant Privileges
+
 	USE hass_db;
-
 	GRANT ALL PRIVILEGES ON *.* TO 'hass_usr'@'localhost';
-
 	CREATE USER 'hass_usr'@'%' IDENTIFIED BY 'ssssssssssssssssssssssssssssssssss';
 	GRANT ALL PRIVILEGES ON *.* TO 'hass_usr'@'%' IDENTIFIED BY 'ssssssssssssssssssssssssssssssssss' WITH GRANT OPTION;
 	FLUSH PRIVILEGES;
 	EXIT;
 
+# Activate virtual env
 	sudo su -s /bin/bash homeassistant
-
 	cd /srv/homeassistant
 
+
 	python3 -m venv .
-
 	source bin/activate
-
 	pip3 install homeassistant
-
 	exit
 
+# Create Service for HA
 	sudo nano /etc/systemd/system/home-assistant@homeassistant.service
 
+# Contents of service file
 	[Unit]
 	Description=Home Assistant
 	After=network.target
@@ -71,9 +73,9 @@
 	User=homeassistant
 	ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
 	[Install]
-	WantedBy=multi-user.target
+	WantedBy=multi-user.target
 
-
+# Enable and start HA service
 	sudo systemctl --system daemon-reload
 	sudo systemctl enable home-assistant@homeassistant
 	sudo systemctl start home-assistant@homeassistant
@@ -81,8 +83,9 @@
 # Update SAMBA Config
 	sudo nano /etc/samba/smb.conf
 
+# Add DB Link to configuration.yaml
 	nano /home/homeassistant/.homeassistant/configuration.yaml
-	
 	db_url: 'mysql://hass_usr:ssssssssssssssssssssssssssssssssss@localhost/hass_db'
 	
+# Permission for HA service account
 	sudo chown -R homeassistant /srv/homeassistant
