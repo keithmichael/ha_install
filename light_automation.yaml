@@ -1,5 +1,6 @@
-- id: '1579199718836'
-  alias: KitchenMotion
+
+
+- alias: "Kitchen Motion"
   trigger:
   - platform: state
     entity_id: binary_sensor.motion_sensor_01
@@ -11,7 +12,7 @@
     data:
       brightness: 255
 
-- alias: Turn kitchen lights off
+- alias: "Turn off Kitchen Lights"
   trigger:
   - platform: state
     entity_id: binary_sensor.motion_sensor_01

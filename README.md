@@ -22,7 +22,7 @@
 # Activate virtual env
 	sudo su -s /bin/bash homeassistant
 	cd /srv/homeassistant
-	python3 -m venv .
+	python3.7 -m venv .
 	source bin/activate
 
 # Install Home Assistant
