@@ -29,6 +29,9 @@
 	pip3 install homeassistant
 	exit
 
+# Permission for HA service account
+	sudo chown -R homeassistant /srv/homeassistant
+	
 # Create Service for HA
 	sudo nano /etc/systemd/system/home-assistant@homeassistant.service
 
@@ -42,9 +45,6 @@
 	ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
 	[Install]
 	WantedBy=multi-user.target
-
-# Permission for HA service account
-	sudo chown -R homeassistant /srv/homeassistant
 
 # Enable and start HA service
 	sudo systemctl --system daemon-reload
