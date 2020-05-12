@@ -14,7 +14,7 @@
 # Add user to modem
 	sudo usermod -G dialout -a homeassistant
 
-#Create directory
+# Create directory
 	cd /srv
 	sudo mkdir homeassistant
 	sudo chown homeassistant:homeassistant homeassistant
@@ -31,7 +31,7 @@
 
 # Permission for HA service account
 	sudo chown -R homeassistant /srv/homeassistant
-	
+
 # Create Service for HA
 	sudo nano /etc/systemd/system/home-assistant@homeassistant.service
 
