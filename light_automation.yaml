@@ -1,5 +1,4 @@
 
-
 - alias: "Kitchen Motion"
   trigger:
   - platform: state
