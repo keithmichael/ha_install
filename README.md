@@ -6,7 +6,7 @@
 
 
 # Install Software
-	sudo apt-get install autoconf libudev-dev nmap python3.7 python3.7-dev python3.7-venv python3-pip libffi-dev libssl-dev --yes
+	sudo apt-get install autoconf libudev-dev nmap python3 python3-dev python3-venv python3-pip libffi-dev libssl-dev --yes
 
 # Create homeassistant user
 	sudo useradd -rm homeassistant
