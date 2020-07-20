@@ -1,3 +1,6 @@
+# Notes
+  This build requires Ubuntu. The build includes adding mysqlserver which improves performance with the recorder component. Please be aware the steps to get the database setup and talking to HA have not been written yet :)
+
 # Set Time Zone
 	sudo timedatectl set-timezone America/New_York
 
