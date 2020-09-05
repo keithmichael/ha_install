@@ -14,3 +14,28 @@
 	sudo nano /etc/systemd/system/sonosapi.service
 
 	sudo systemctl enable sonosapi.service
+
+
+[Unit]
+
+Description=Sonos HTTP API Daemon
+
+After=syslog.target network.target
+
+ 
+
+[Service]
+
+Type=simple
+
+ExecStart=/usr/bin/node /opt/node-sonos-http-api/server.js
+
+Restart=always
+
+RestartSec=10
+
+ 
+
+[Install]
+
+WantedBy=multi-user.target
