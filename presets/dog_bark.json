@@ -1,0 +1,14 @@
+{
+  "players": [
+    {
+      "roomName": "Dining Room",
+      "volume": 95
+    },
+    {
+      "roomName": "Kitchen",
+      "volume": 95
+    }
+],
+  "pauseOthers": false,
+  "clip": "dog-barking-2-bullmastiff.mp3"
+}

@@ -1,0 +1,10 @@
+{
+  "players": [
+    {
+      "roomName": "Office",
+      "volume": "20"
+    }
+  ],
+  "pauseOthers": false,
+  "favorite": "NPR Classical"
+}

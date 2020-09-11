@@ -1,0 +1,19 @@
+{
+  "players": [
+    {
+      "roomName": "Kitchen",
+      "volume": 15
+    },
+    {
+      "roomName": "Bathroom",
+      "volume": 10
+    },
+    {
+      "roomName": "Dining Room",
+      "volume": 8
+    }
+
+  ],
+  "pauseOthers": false,
+  "favorite": "Howard Stern"
+}

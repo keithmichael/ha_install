@@ -1,0 +1,13 @@
+{
+  "players": [
+    {
+      "roomName": "TV",
+      "volume": 5
+    }
+  ],
+  "playMode": {
+    "shuffle": true
+  },
+  "pauseOthers": false,
+  "favorite": "Gizmo"
+}

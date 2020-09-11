@@ -1,0 +1,20 @@
+{
+  "players": [
+    {
+      "roomName": "Kitchen",
+      "volume": 10
+    },
+    {
+      "roomName": "Bathroom",
+      "volume": 10
+    },
+    {
+      "roomName": "Bedroom",
+      "volume": 10
+    },
+
+    {
+      "roomName": "Living Room",
+      "volume": 10
+    }]
+}

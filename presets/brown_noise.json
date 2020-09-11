@@ -1,0 +1,10 @@
+{
+  "players": [
+    {
+      "roomName": "Bedroom",
+      "volume": 10
+    }
+  ],
+  "pauseOthers": false,
+  "favorite": "GOODNIGHT"
+}
