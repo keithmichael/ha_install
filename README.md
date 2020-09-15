@@ -1,5 +1,5 @@
 # Notes
-  This build requires Ubuntu. The build includes adding mysqlserver which improves performance with the recorder component. Please be aware the steps to get the database setup and talking to HA have not been written yet :)
+  This build requires Ubuntu. Steps for SAMBA/MySQL soon.
 
 # Set Time Zone
 	sudo timedatectl set-timezone America/New_York
@@ -9,7 +9,7 @@
 
 
 # Install Software
-	sudo apt-get install samba mysql-server mysql-client libmysqlclient-dev autoconf libudev-dev nmap python3 python3-dev python3-venv python3-pip libffi-dev libssl-dev --yes
+	sudo apt-get install autoconf libudev-dev nmap python3 python3-dev python3-venv python3-pip libffi-dev libssl-dev --yes
 
 # Create homeassistant user
 	sudo useradd -rm homeassistant
